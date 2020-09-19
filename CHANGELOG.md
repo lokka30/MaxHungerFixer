@@ -12,3 +12,6 @@
 * Added a config including options to set `second-attempt` and `debug-mode`.
 * Added a multi-mode debugging system which might help diagnose any issues.
 * Updated README.md
+
+### 1.1.1-ALPHA
+* Few expansions to the `second-attempt` code - an extra check and more in-depth debugging.

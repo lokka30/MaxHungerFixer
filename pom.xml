@@ -6,7 +6,7 @@
 
     <groupId>me.lokka30</groupId>
     <artifactId>MaxHungerFixer</artifactId>
-    <version>1.1.0-ALPHA</version>
+    <version>1.1.1-ALPHA</version>
 
     <name>MaxHungerFixer</name>
     <description>SpigotMC plugin that ensures users do not have more than 20.0 hunger points</description>

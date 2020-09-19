@@ -49,14 +49,19 @@ public class MaxHungerFixer extends JavaPlugin implements Listener {
         debugLog(1, "Adjusting food level for user " + player.getName() + "...");
 
         player.setFoodLevel(20);
-        debugLog(2, "> Set food level to 20.");
+        debugLog(1, "> Set food level to 20.");
 
         if (getConfig().getBoolean("second-attempt")) {
             new BukkitRunnable() {
                 @Override
                 public void run() {
-                    debugLog(2, "> Running second attempt.");
-                    player.setFoodLevel(20);
+                    debugLog(1, "> Running second attempt.");
+                    if (player.getFoodLevel() > 20) {
+                        debugLog(1, "> Second attempt has completed successfully.");
+                        player.setFoodLevel(20);
+                    } else {
+                        debugLog(1, "> Player's food level is no longer above 20 points, skipping second attempt adjustment.");
+                    }
                 }
             }.runTaskLater(this, 10L);
         }
