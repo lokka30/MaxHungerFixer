@@ -1,0 +1,10 @@
+# MaxHungerFixer by lokka30
+
+# Should the plugin make another delayed attempt at fixing oversize food levels?
+second-attempt: true
+
+# Debug Level
+# 0: Don't print any debugging information in the console.
+# 1: Only when food levels are adjusted.
+# 2: Everything.
+debug-level: 0
